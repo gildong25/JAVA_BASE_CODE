@@ -22,6 +22,7 @@ public class forEx01 {
 		int result = 0;
 		int N = 0;
 
+		
 		// 1~9까지의 합을 구하는 프로그램
 		for(int i = 0; i < 10; ++i) {
 			result += i;
