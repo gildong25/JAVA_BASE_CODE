@@ -56,7 +56,6 @@ public class Ex19 {
 			System.out.println();
 		}
 
-
 		System.out.println("------------5-------------");
 
 		// 5
@@ -72,7 +71,7 @@ public class Ex19 {
 			}
 			System.out.println();
 		}
-		
+
 		System.out.println("------------6-------------");
 
 		// 6
@@ -88,7 +87,6 @@ public class Ex19 {
 			}
 			System.out.println();
 		}
-
 		System.out.println("------------7-------------");
 
 		// 7
@@ -113,13 +111,13 @@ public class Ex19 {
 				for (int j = N; j < k; j++) {
 					System.out.print(" ");
 				}
-				for (int j = N*2; j > k; j--) {
+				for (int j = N * 2; j > k; j--) {
 					System.out.print("*");
 				}
-				for (int j = N*2 - 1; j > k; j--) {
+				for (int j = N * 2 - 1; j > k; j--) {
 					System.out.print("*");
 				}
-				for (int j = N*2; j > k; j--) {
+				for (int j = N; j > k; j--) {
 					System.out.print(" ");
 				}
 				System.out.println();
@@ -130,12 +128,12 @@ public class Ex19 {
 		System.out.println("------------8-------------");
 
 		// 8
-		for (int k = 0; k < 2 * N; k++) {
+		for (int k = 0; k < 2 * N + 1; k++) {
 			if (k < N + 1) {
 				for (int j = N; j >= k; j--) {
 					System.out.print("*");
 				}
-				for (int j = 0; j <= k; j++) {
+				for (int j = 0; j < k; j++) {
 					System.out.print(" ");
 				}
 				for (int j = 0; j <= k - 1; j++) {
@@ -147,20 +145,24 @@ public class Ex19 {
 				System.out.println();
 
 			} else if (k > 5) {
-				for (int j = N; j < k+1; j++) {
+				for (int j = N; j < k + 1; j++) {
 					System.out.print("*");
 				}
-				for (int j = N * 2-1; j > k; j--) {
+				for (int j = N * 2; j > k; j--) {
 					System.out.print(" ");
 				}
-				for (int j = N * 2; j >= k; j--) {
+				for (int j = N * 2; j > k; j--) {
 					System.out.print(" ");
 				}
-				for (int j = N; j < k+1; j++) {
+				for (int j = N; j < k + 1; j++) {
 					System.out.print("*");
 				}
 				System.out.println();
 			}
 		}
+		
+		
+		
+		
 	}
 }
